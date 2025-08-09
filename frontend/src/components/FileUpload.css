@@ -1,0 +1,65 @@
+.upload-container {
+  position: absolute;
+  min-width: 50vw;
+  min-height: 15vh;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50vh;
+}
+
+.drop-zone {
+  border: 2px dashed #aaa;
+  min-height: 15vh;
+
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+  position: relative;
+}
+
+.drop-zone.dragging {
+  border-color: var(--spot-green);
+  background-color: #e6ffe9;
+}
+
+.file-input {
+  margin-top: 15px;
+}
+
+.small-text {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.drag-message {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--spot-green);
+}
+
+.file-list {
+  margin-top: 20px;
+}
+
+.file-list h2 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.file-list ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.file-list li {
+  margin-bottom: 5px;
+}
