@@ -1,0 +1,18 @@
+Main page
+    top artist
+        unique artists
+        pie chart?
+    time listened
+        average time listened
+        graph over years
+        fun fact
+    top song
+        unique songs
+        top 10
+    time of day
+        graph
+        
+
+listening over years
+time of day
+unique songs and artists

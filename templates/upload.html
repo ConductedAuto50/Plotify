@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload JSON</title>
+</head>
+<body>
+    <h1>Upload a JSON File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".json" required >
+        <button type="submit">Upload</button>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the user's time zone
+            const userTimeZone = new Date().getTimezoneOffset();
+            
+            // Send the time zone to your Flask server
+            fetch("/set_timezone", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ timezone: userTimeZone })
+            });
+        });
+    </script>
+
+</body>
+</html>
