@@ -38,3 +38,10 @@ static/css/main.css
 
 # Ignore secrets
 .env
+
+# Cache
+.cache
+
+# notes
+notes.txt
+todo.txt
